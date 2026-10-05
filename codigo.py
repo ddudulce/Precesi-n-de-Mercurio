@@ -810,9 +810,9 @@ revolution_slider.on_changed(
 )
 
 
-# ============================================================
+
 # 18. BOTONES RÁPIDOS
-# ============================================================
+
 
 def set_one_orbit(event):
     revolution_slider.set_val(
@@ -865,10 +865,6 @@ button_1m.on_clicked(
 )
 
 
-# ============================================================
-# 19. MOSTRAR / OCULTAR NEWTON
-# ============================================================
-
 def toggle_newton(label):
     """
     Permite ocultar la órbita newtoniana cuando se quiera
@@ -886,10 +882,7 @@ check_newton.on_clicked(
     toggle_newton
 )
 
-
-# ============================================================
 # 20. ANIMACIÓN AUTOMÁTICA
-# ============================================================
 
 animation_running = False
 
@@ -966,11 +959,6 @@ button_play.on_clicked(
     toggle_animation
 )
 
-
-# ============================================================
-# 21. REINICIO
-# ============================================================
-
 def reset_simulation(event):
     global animation_running
 
@@ -987,14 +975,7 @@ def reset_simulation(event):
         ORBITS_PER_CENTURY
     )
 
-
 button_reset.on_clicked(
     reset_simulation
 )
-
-
-# ============================================================
-# 22. MOSTRAR SIMULACIÓN
-# ============================================================
-
 plt.show()
